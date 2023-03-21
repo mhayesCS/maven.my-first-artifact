@@ -18,7 +18,7 @@ project_name=`./mvnw help:evaluate -Dexpression=project.name -q -DforceStdout`
 project_groupId=`./mvnw help:evaluate -Dexpression=project.groupId -q -DforceStdout`
 project_artifactId=`./mvnw help:evaluate -Dexpression=project.artifactId -q -DforceStdout`
 project_version=`./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout`
-project_build_directory=`mvn help:evaluate -Dexpression=project.build.directory`
+project_build_directory=`./mvnw help:evaluate -Dexpression=project.build.directory`
 package_cloud_username=""
 package_cloud_packagename=""
 read -p "Enter PackageCloud username: " package_cloud_username
